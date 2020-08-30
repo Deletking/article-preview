@@ -26,7 +26,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 1440px;
+    width: 100%;
     height: 100vh;
 }
 .preview {
@@ -47,4 +47,93 @@ main {
 .preview-text {
     padding: 10px 30px 30px 30px;
     width: 60%;
+}
+
+.preview-text h1 {
+    color: hsl(217, 19%, 35%);
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.preview-text p {
+    color: hsl(214, 17%, 51%);
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.preview-text .perfil {
+    display: flex;
+    align-items: center;
+}
+.perfil {
+    margin-top: 20px;
+    position: relative;
+}
+.perfil-text {
+    width: 60%;
+    margin-left: 5%;
+}
+.perfil-text h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.perfil .avatar {
+    width: 10%;
+}
+.perfil .avatar img{
+    border-radius: 50%;
+    height: 50px;
+}
+
+.perfil-share {
+    position: relative;
+    width: 30%;
+    text-align: center;
+}
+.perfil-share #shareButton {
+    background-color: hsl(212, 23%, 69%);
+    border-radius: 50%;
+    /* background: transparent; */
+    padding: 8px;
+}
+.perfil-share #shareButton:hover {
+    background-color: hsl(214, 17%, 51%);
+}
+#shareButton:focus {
+    background-color: hsl(214, 17%, 51%);
+    outline:none;
+}
+
+#shareIcons {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -130%;
+    right: -16%;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 15px;
+    color: hsl(214, 17%, 51%);
+    text-transform: uppercase;
+    width: 200px;
+}
+#shareIcons p {
+    margin:0;
+}
+#shareIcons ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+#shareIcons:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 44%;
+    background-color: hsl(217, 19%, 35%);
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
 }

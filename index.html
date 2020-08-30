@@ -39,7 +39,7 @@
                 <img src="images/icon-share.svg" alt="share">
               </button>
             </div>
-
+           
             <div id="shareIcons">
               <p>Share</p>
               <ul>
@@ -60,6 +60,7 @@
                 </li>
               </ul>
             </div>
+            
           </div>
 
       </div>
@@ -76,10 +77,14 @@
     </div>
   </footer>
   <script>
-    let $shareIcons = document.queryselector('#shareIcons'); 
-    let $button = document.queryselector('#shareButton');
-    $button.addEventlistener('click', ()=> {
-      
+    let $shareIcons = document.querySelector('#shareIcons'); 
+    let $button = document.querySelector('#shareButton');
+    $button.addEventListener('click', () => {
+      if($shareIcons.style.display == 'flex') {
+        $shareIcons.style.display = 'none';
+      } else {
+        $shareIcons.style.display = 'flex'
+      }
     })
   </script>
 </body>
