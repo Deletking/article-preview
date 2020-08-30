@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="preview">
+     
+      <div class="preview-image">
+      </div>
+     
+      <div class="preview-text">
+        <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p>Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.</p>    
+          
+          <div class="perfil">
+            
+            <div class="avatar">
+              <img src="images/avatar-michelle.jpg" alt="avatar">  
+            </div>
+
+            <div class="perfil-text">
+              <h2>Michelle Appleton</h2>
+              <p><small>28 Jun 2020</small></p>
+            </div>
+
+            <div class="perfil-share">
+              <button id="shareButton">
+                <img src="images/icon-share.svg" alt="share">
+              </button>
+            </div>
+
+            <div id="shareIcons">
+              <p>Share</p>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/frontendmentor" target="_blank">
+                    <img src="images/icon-facebook.svg" alt="logo facebook">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/frontendmentor" target="_blank">
+                    <img src="images/icon-twitter.svg" alt="logo twitter">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/frontendmentor" target="_blank">
+                    <img src="images/icon-pinterest.svg" alt="logo pinterest">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+      </div>
+   
+    </section>
+  </main>
+  
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Deletking</a>.
+    </div>
+  </footer>
+  <script>
+    let $shareIcons = document.queryselector('#shareIcons'); 
+    let $button = document.queryselector('#shareButton');
+    $button.addEventlistener('click', ()=> {
+      
+    })
+  </script>
+</body>
+</html>
