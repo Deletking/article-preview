@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Article preview component</title>
+  <title>Deletking | Article preview component | Frontend Mentor</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -34,12 +34,6 @@
               <p><small>28 Jun 2020</small></p>
             </div>
 
-            <div class="perfil-share">
-              <button id="shareButton">
-                <img src="images/icon-share.svg" alt="share">
-              </button>
-            </div>
-           
             <div id="shareIcons">
               <p>Share</p>
               <ul>
@@ -60,6 +54,13 @@
                 </li>
               </ul>
             </div>
+
+            <div class="perfil-share">
+              <button id="shareButton">
+                <img src="images/icon-share.svg" alt="share">
+              </button>
+            </div>
+           
             
           </div>
 
@@ -77,13 +78,23 @@
     </div>
   </footer>
   <script>
+    let $image = document.querySelector('.avatar'); 
+    let $text = document.querySelector('.perfil-text'); 
+    let $perfil = document.querySelector('.perfil-share'); 
     let $shareIcons = document.querySelector('#shareIcons'); 
     let $button = document.querySelector('#shareButton');
     $button.addEventListener('click', () => {
       if($shareIcons.style.display == 'flex') {
         $shareIcons.style.display = 'none';
+        $text.classList.remove('d-none');
+        $image.classList.remove('d-none');
+        $perfil.classList.remove('bg');
       } else {
         $shareIcons.style.display = 'flex'
+        $text.classList.add('d-none');
+        $image.classList.add('d-none');
+        $perfil.classList.add('bg');
+        $perfil.classList.add('bg');
       }
     })
   </script>
