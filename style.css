@@ -37,6 +37,7 @@ main {
     height: auto;
     margin-top: 20px;
     background-color: #fff;
+    border-radius: 0 0 15px 15px;
 }
 .preview-image {
     background-image: url('images/drawers.jpg');
@@ -179,10 +180,13 @@ footer {
         width: 100%;
         top: unset;
         right: unset;
-        border-radius: 0;
+        border-radius: 0 0 0 15px;
     }
     #shareIcons h1, #shareIcons p{
         padding: 0;
+    }
+    #shareIcons p{
+        font-size: 1.2em;
     }
     #shareIcons:after {
         display: none;
@@ -205,6 +209,7 @@ footer {
     }
     .bg {
         background-color: hsl(217, 19%, 35%);
+        border-radius: 0 0 15px 0;
     }
     .bg #shareButton{
         background-color: hsl(217, 19%, 35%);
